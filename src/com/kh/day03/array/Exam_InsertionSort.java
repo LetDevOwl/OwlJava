@@ -21,20 +21,20 @@ public class Exam_InsertionSort {
 		// {1, 2, 4, 3, 5}
 		// 4하고 3 비교 -> 교환
 		// {1, 2, 3, 4, 5} => 4번째 결과
-		int [] arrs = {2, 5, 4, 1, 3};
-		//{2, 5, 4, 1, 3}
+		int[] arrs = { 2, 5, 4, 1, 3 };
+		// {2, 5, 4, 1, 3}
 		// j = 1
-		for(int i = 1; i < arrs.length;i++) {
-			for(int j = i; j > 0; j--) {
-				if(arrs[j-1] > arrs[j]) {
+		for (int i = 1; i < arrs.length; i++) {
+			for (int j = i; j > 0; j--) {
+				if (arrs[j - 1] > arrs[j]) {
 					int temp = arrs[j];
-					arrs[j] = arrs[j-1];
-					arrs[j-1] = temp;
+					arrs[j] = arrs[j - 1];
+					arrs[j - 1] = temp;
 				}
 			}
 		}
 		// 배열출력
-		for(int i = 0; i < arrs.length; i++) {
+		for (int i = 0; i < arrs.length; i++) {
 			System.out.print(arrs[i] + " ");
 		}
 		// j = 2
@@ -69,7 +69,6 @@ public class Exam_InsertionSort {
 //			arrs[0] = temp;
 //		}
 //		//{1, 2, 4, 5, 3}
-
 
 	}
 
