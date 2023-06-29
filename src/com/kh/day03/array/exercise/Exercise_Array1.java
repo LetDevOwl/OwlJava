@@ -69,6 +69,11 @@ public class Exercise_Array1 {
 		// 랜덤값 6개받기
 		for (int i = 0; i < arrs.length; i++) {
 			arrs[i] = rand.nextInt(45) + 1;
+			for (int j = 0; j < i; j++) {
+				if (arrs[j] == arrs[i]) {
+					i--;
+				}
+			}
 		}
 
 		// 정렬
@@ -83,7 +88,6 @@ public class Exercise_Array1 {
 		}
 
 		// 배열출력
-		System.out.println();
 		for (int i = 0; i < arrs.length; i++) {
 			System.out.print(arrs[i] + " ");
 		}
