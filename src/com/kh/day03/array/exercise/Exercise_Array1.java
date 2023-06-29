@@ -72,7 +72,10 @@ public class Exercise_Array1 {
 			for (int j = 0; j < i; j++) {
 				if (arrs[j] == arrs[i]) {
 					i--;
+<<<<<<< HEAD
 					break;
+=======
+>>>>>>> branch 'master' of https://github.com/LetDevOwl/OwlJava.git
 				}
 			}
 		}
