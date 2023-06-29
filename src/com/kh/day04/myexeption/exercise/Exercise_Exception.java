@@ -50,7 +50,6 @@ public class Exercise_Exception {
 		// 3개의 정수를 입력받아 합을 구하는 프로그램을 작성하여라.
 		// 사용자가 정수가 아닌 문자를 이별할 떄 발생하는 InputMismatchExpception 예외를
 		// 처리하여 다시 입력받고록 하여라.
-<<<<<<< HEAD
 		Scanner sc = new Scanner(System.in);
 		System.out.println("정수 3개를 입력하세요.");
 
@@ -95,9 +94,5 @@ public class Exercise_Exception {
 		} catch (NumberFormatException e) {
 			System.out.println("해당 문자열은 정수로 변환할 수 없습니다.");
 		}
-=======
-		
-
->>>>>>> branch 'master' of https://github.com/LetDevOwl/OwlJava.git
 	}
 }
