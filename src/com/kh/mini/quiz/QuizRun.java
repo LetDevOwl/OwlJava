@@ -7,20 +7,26 @@ public class QuizRun {
 	public static void main(String[] args) {
 		Quiz[] QuizArr = new Quiz[5];
 		finish: while (true) {
-			int language = printMenu();
-			int category = printMenu();
+			int language = printLanguageMenu();
 			switch (language) {
 			case 1:
-				inputScore(QuizArr);
 				break;
 			case 2:
-				printScore(QuizArr);
 				break;
 			case 3:
-				checkPass(QuizArr);
 				break;
 			case 4:
 				System.out.println("프로그램이 종료되었습니다.");
+				break finish;
+			}
+			
+			int category = printCategoryMenu();
+			switch (language) {
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
 				break finish;
 			}
 		}
@@ -52,7 +58,7 @@ public class QuizRun {
 
 	}
 
-	private static int printMenu() {
+	private static int printLanguageMenu() {
 //		메인화면
 //		======= KH 퀴즈 !!! =======
 //		1. HTML, CSS, JAVASCRIPT
@@ -60,7 +66,18 @@ public class QuizRun {
 //		3. Java
 //		4. EXIT
 //		원하는 퀴즈를 선택해주세요 : (ex> 3 -> enter)
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("======= KH 퀴즈 !!! =======");
+		System.out.println("1. HTML, CSS, JAVASCRIPT");
+		System.out.println("2. Oracle");
+		System.out.println("3. Java");
+		System.out.println("4. 프로그램 종료");
+		System.out.print("원하는 퀴즈를 선택해주세요 : ");
+		int language= sc.nextInt();	
+		return language;
+	}
+
+	private static int printCategoryMenu() {
 //		문제유형 화면
 //		======= KH 퀴즈 !!! =======
 //		1. 4지선다
@@ -69,17 +86,6 @@ public class QuizRun {
 //		원하는 문제형식을 선택해주세요 : (ex> 2 -> enter)
 		Scanner sc = new Scanner(System.in);
 		System.out.println("======= KH 퀴즈 !!! =======");
-		System.out.println();
-		System.out.println("1. HTML, CSS, JAVASCRIPT");
-		System.out.println("2. Oracle");
-		System.out.println("3. Java");
-		System.out.println("4. 프로그램 종료");
-		System.out.print("원하는 퀴즈를 선택해주세요 : ");
-		int language= sc.nextInt();
-		
-		
-		System.out.println("======= KH 퀴즈 !!! =======");
-		System.out.println();
 		System.out.println("1. 4지선다");
 		System.out.println("2. O/X");
 		System.out.println("3. 이전화면으로…");
@@ -88,17 +94,12 @@ public class QuizRun {
 		return category;
 	}
 
-	private static void inputScore(Quiz[] quizArr) {
+	private static void chioceQuiz(Quiz[] quizArr) {
 		// TODO Auto-generated method stub
 
 	}
 
-	private static void printScore(Quiz[] quizArr) {
-		// TODO Auto-generated method stub
-
-	}
-
-	private static void checkPass(Quiz[] quizArr) {
+	private static void YNQuiz(Quiz[] quizArr) {
 		// TODO Auto-generated method stub
 
 	}
