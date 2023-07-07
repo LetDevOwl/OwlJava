@@ -24,18 +24,21 @@ public class Exam_ObjectProperty {
 //		print(p);
 //		print(p2);
 		
+		// Object 클래스의 equals() 메소드 : 내용비교
 		String javaStr = "Java";
 		String javaStr2 = "Java";
-		String[] strArrs = new String[10]; 
+		String javaStr3 = new String("Java");
+		String [] strArrs = new String[10];
 		strArrs[0] = "Java";
 		strArrs[1] = "Java";
-//		if(javaStr == java);
-//		if(javaStr == javaStr2);
-		if(javaStr == javaStr2) {
+//		if(javaStr == "Java") {
+//		if(javaStr == javaStr2) {
+//		if(strArrs[0] == strArrs[1]) {
+//		if(javaStr == javaStr3) {
+		if(javaStr.equals(javaStr3)) {
 			System.out.println("같습니다.");
 		}else {
-			System.out.println("다릅니다.");			
+			System.out.println("다릅니다.");
 		}
-		
 	}
 }
