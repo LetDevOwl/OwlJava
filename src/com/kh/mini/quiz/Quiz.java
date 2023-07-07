@@ -137,7 +137,7 @@ public class Quiz {
 		quizArrs[117] = "OX java문제18";
 		quizArrs[118] = "OX java문제19";
 		quizArrs[119] = "OX java문제20";
-		
+
 		choiceArrs = new String[60];
 		// html 4지선다 보기
 		choiceArrs[0] = "1.a 2.b 3.c 4.d";
@@ -202,7 +202,7 @@ public class Quiz {
 		choiceArrs[57] = "1.a 2.b 3.c 4.d";
 		choiceArrs[58] = "1.a 2.b 3.c 4.d";
 		choiceArrs[59] = "1.a 2.b 3.c 4.d";
-		
+
 		answerSheetArrs = new int[120];
 		// html 4지선다 정답
 		answerSheetArrs[0] = 1;
@@ -339,6 +339,5 @@ public class Quiz {
 	public void setAnswer(int[] answer) {
 		this.answer = answer;
 	}
-
 
 }

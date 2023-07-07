@@ -24,20 +24,20 @@ public class QuizRun {
 			int category = quizFunc.printCategoryMenu();
 			switch (category) {
 			case 1:
-				if(language == 1) {
+				if (language == 1) {
 					quizFunc.htmlChioceQuiz();
-				}else if(language == 2) {
+				} else if (language == 2) {
 					quizFunc.oracleChioceQuiz();
-				}else {
+				} else {
 					quizFunc.javaChioceQuiz();
 				}
 				break;
 			case 2:
-				if(language == 1) {
+				if (language == 1) {
 					quizFunc.htmlYNQuiz();
-				}else if(language == 2) {
+				} else if (language == 2) {
 					quizFunc.oracleYNQuiz();
-				}else {
+				} else {
 					quizFunc.javaYNQuiz();
 				}
 				break;

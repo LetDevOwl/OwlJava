@@ -1,19 +1,44 @@
 package com.kh.mini.quiz;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
 public class QuizFunction {
 
+	private List<Quiz2> qList;
 	private int[] answer;
 	private int[] randQuestion; // 랜덤 5개 퀴즈 선택
 
 	public QuizFunction() {
+		qList = new ArrayList<Quiz2>();
+		qList.add(new Quiz2("4지선다 html문제1", "1.a 2.b 3.c 4.d", 1));
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+		qList.add(new Quiz2());
+
 		randQuestion = new int[5];
 		answer = new int[5];
-
 	}
 
+	public void inputQuiz() {
+		String quizContent = "";
+		Quiz2 quiz2 = new Quiz2();
+		quiz2.setQuizContent(quizContent);
+	}
 	public int printLanguageMenu() {
 //		메인화면
 //		======= KH 퀴즈 !!! =======
