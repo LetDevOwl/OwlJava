@@ -29,7 +29,7 @@ public class Exam_MouseAdapter extends JFrame {
 			public void mousePressed(MouseEvent e) {
 				int x = e.getX();
 				int y = e.getY();
-				la.setLocation(x,y);
+				la.setLocation(x, y);
 			}
 		});
 

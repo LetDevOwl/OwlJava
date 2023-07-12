@@ -6,9 +6,9 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class Exam_Nulllayout extends JFrame {
+public class Exam_NullLayout extends JFrame {
 
-	public Exam_Nulllayout() {
+	public Exam_NullLayout() {
 		setTitle("NullLayout Sample");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -20,16 +20,18 @@ public class Exam_Nulllayout extends JFrame {
 		la.setSize(200, 20);
 		c.add(la);
 
-		JButton btn = new JButton("1");
-		btn.setLocation(15, 15);
-		btn.setSize(50, 20);
-		c.add(btn);
+		for (int i = 1; i <= 9; i++) {
+			JButton btn = new JButton(String.valueOf(i));
+			btn.setLocation(i * 15, i * 15);
+			btn.setSize(50, 20);
+			c.add(btn);
+		}
 
 		setSize(300, 200);
 		setVisible(true);
 	}
 
 	public static void main(String[] args) {
-		new Exam_Nulllayout();
+		new Exam_NullLayout();
 	}
 }

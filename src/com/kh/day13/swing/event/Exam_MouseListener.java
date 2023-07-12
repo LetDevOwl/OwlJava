@@ -24,18 +24,22 @@ public class Exam_MouseListener extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 			}
+
 			@Override
 			public void mousePressed(MouseEvent e) {
 				int x = e.getX();
 				int y = e.getY();
-				la.setLocation(x,y);
+				la.setLocation(x, y);
 			}
+
 			@Override
 			public void mouseExited(MouseEvent e) {
 			}
+
 			@Override
 			public void mouseEntered(MouseEvent e) {
 			}
+
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			}

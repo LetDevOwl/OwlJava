@@ -18,26 +18,25 @@ public class Exam_InnerClassListener extends JFrame {
 		JButton btn = new JButton("Action");
 		btn.addActionListener(new MyActionListener());
 		c.add(btn);
-		
-		setSize(350,150);
+
+		setSize(350, 150);
 		setVisible(true);
 	}
-	
+
 	private class MyActionListener implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			JButton btn = (JButton)e.getSource();
-			if(btn.getText().equals("Action")) {
+			JButton btn = (JButton) e.getSource();
+			if (btn.getText().equals("Action")) {
 				btn.setText("액션");
-			}else {
+			} else {
 				btn.setText("Action");
 			}
 			Exam_InnerClassListener.this.setTitle(btn.getText() + " 이벤트 리스너 예제");
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		new Exam_InnerClassListener();
 	}
 }
-
