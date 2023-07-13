@@ -1,8 +1,10 @@
 package com.kh.day13.swing.student.view;
 
+import java.util.List;
 import java.util.Scanner;
 
-import com.kh.day10.collection.student.Student;
+import com.kh.day13.swing.student.model.vo.Student;
+
 
 public class StudentView {
 	public int printMenu() {
@@ -30,5 +32,16 @@ public class StudentView {
 		Student std = new Student(name, score1, score2);
 //		stdList.add(std);
 		return std;
+	}
+
+	public void displaySuccess(String message) {
+		System.out.println(message);
+	}
+
+	public void showAllStudentList(List<Student> allList) {
+		int count = 1;
+		for(Student student : allList) {
+			System.out.printf("이름 : %s, 첫번째 점수 : %d, 두번째 점수 : %d", count++, student.getName(), student.getScore1(), student.getScore2());
+		}
 	}
 }

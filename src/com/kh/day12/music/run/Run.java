@@ -11,6 +11,7 @@ public class Run {
 	public static void main(String[] args) {
 		MusicView view = new MusicView();
 		MusicController mController = new MusicController();
+		
 		Scanner sc = new Scanner(System.in);
 		int choice = 0;
 		Music music = null;
