@@ -38,39 +38,6 @@ public class Exam_DblclickChangeColor extends JFrame {
 			}
 		}
 	}
-//	private class MyMouseListener implements MouseListener {
-//
-//		@Override
-//		public void mouseClicked(MouseEvent e) {
-//			Component c = (Component)e.getSource();
-//			c.setBackground(Color.BLACK);
-//		}
-//
-//		@Override
-//		public void mousePressed(MouseEvent e) {
-//			// TODO Auto-generated method stub
-//			
-//		}
-//
-//		@Override
-//		public void mouseReleased(MouseEvent e) {
-//			// TODO Auto-generated method stub
-//			
-//		}
-//
-//		@Override
-//		public void mouseEntered(MouseEvent e) {
-//			// TODO Auto-generated method stub
-//			
-//		}
-//
-//		@Override
-//		public void mouseExited(MouseEvent e) {
-//			// TODO Auto-generated method stub
-//			
-//		}
-//		
-//	}
 
 	public static void main(String[] args) {
 		new Exam_DblclickChangeColor();
