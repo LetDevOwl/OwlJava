@@ -33,16 +33,19 @@ public class ChattingServer {
 			System.out.println("클라이언트의 접속을 기다리고 있습니다.");
 			Socket socket = serverSocket.accept();
 			System.out.println("클라이언트가 접속하였습니다.");
+			
 			is = socket.getInputStream();
 			os = socket.getOutputStream();
 			dis = new DataInputStream(is);
 			dos = new DataOutputStream(os);
 			System.out.println("채팅이 시작되었습니다.");
+			
 			while (true) { // 무한반복 서버에서 먼저 보냄!
 				System.out.print("서버(나) : ");
 				String sendMsg = sc.nextLine();
 				dos.writeUTF(sendMsg); // 보내기
 				dos.flush();
+				
 				String recvMsg = dis.readUTF(); // 받기
 				System.out.printf("클라이언트(상대) : %s\n", recvMsg);
 			}
